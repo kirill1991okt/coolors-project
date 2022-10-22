@@ -13,11 +13,20 @@ function generateRandomColor() {
 
 function setRandomColors() {
   columns.forEach((col) => {
-    const color = generateRandomColor();
-    const text = col.querySelector('h2');
+    const color = generateRandomColor(),
+      text = col.querySelector('h2'),
+      btn = col.querySelector('button');
+
     text.textContent = color;
     col.style.background = color;
+    setTextColor(text, color);
+    setTextColor(btn, color);
   });
+}
+
+function setTextColor(text, color) {
+  const luminance = chroma(color).luminance();
+  text.style.color = luminance > 0.5 ? '#000' : '#fff';
 }
 
 setRandomColors();
