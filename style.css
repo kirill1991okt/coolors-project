@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     display: flex;
@@ -16,11 +16,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(12, 94, 94);
-    border: 1px solid black;
 }
 
-.col h2{
+.col h2 {
     padding: 10px;
     color: #fff;
     border-radius: 10px;
@@ -33,13 +31,13 @@ body{
 }
 
 .col button {
-  border: none;
-  background-color: transparent;
-  font-size: 1.5rem;  
-  color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  transition: background 0.3s;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
 }
 
 .col button:hover {
